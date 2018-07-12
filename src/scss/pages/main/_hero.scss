@@ -1,0 +1,56 @@
+.hero {
+    background: url("../img/hero-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__logo {
+        border-bottom: 2px solid $main-color;
+    }
+    .base-content {
+        height: 100vh;
+        padding-top: 50px;
+    }
+    h1 {
+        font-size: 4.4rem;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+    }
+    h2 {
+        font-size: 4.4rem;
+        overflow: hidden;
+        text-align: center;
+        color: $main-color;
+    }
+    h2:before,
+    h2:after {
+        background-color: #3a3a3c;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    h2:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    h2:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
+
+.counter {
+    @include gradient-bg($main-color-rgba,
+    $main-color-brighter-rgba);
+    padding: 15px 0;
+    &__img {}
+    &__number {
+        font-size: 3.2rem;
+        color: #FFF;
+    }
+    &__text {
+        font-size: 2.4rem;
+    }
+}
