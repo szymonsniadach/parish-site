@@ -42,10 +42,8 @@
 }
 
 .counter {
-    @include gradient-bg($main-color-rgba,
-    $main-color-brighter-rgba);
+    @include gradient-bg($main-color-rgba, $main-color-brighter-rgba);
     padding: 15px 0;
-    &__img {}
     &__number {
         font-size: 3.2rem;
         color: #FFF;

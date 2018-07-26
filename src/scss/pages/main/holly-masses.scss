@@ -1,0 +1,10 @@
+section.holy-masses {
+    @include gradient-bg($main-color-rgba, $main-color-brighter-rgba);
+
+    p {
+        font-size: 2.2rem;
+    }
+    span {
+        color: $color-dark;
+    }
+}

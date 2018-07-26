@@ -1,3 +1,36 @@
 @mixin gradient-bg($from, $to) {
     background: linear-gradient(45deg, $from 0%, $to 100%);
 }
+
+@mixin section-heading($color: $main-color) {
+    font-size: 3.8rem;
+    color: $color;
+    -webkit-margin-before: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    &:before,
+    &:after {
+        background-color: $color;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+    }
+    &:before {
+        right: 0.5em;
+    }
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+        width: 50%;
+    }
+}
+
+@mixin button($color-frame: $main-color, $color-text: #FFF) {
+    text-decoration: none;
+    border: 2px solid $color-frame;
+    color: $color-text;
+    font-size: 2.4rem;
+    padding: 10px 20px;
+}

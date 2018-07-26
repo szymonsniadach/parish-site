@@ -12,6 +12,7 @@ class Main extends CI_Controller {
 
 		$this->load->view('pages/main/hero');
 		$this->load->view('pages/main/announcements');
+		$this->load->view('pages/main/holy-masses');
 		
 		$this->load->view('partials/footer');
 	}

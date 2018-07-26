@@ -1,26 +1,7 @@
 .section-heading {
-    font-size: 3.8rem;
-    color: $main-color;
-    -webkit-margin-before: 0;
-    text-transform: uppercase;
+    @include section-heading();
+}
 
-    overflow: hidden;
-    color: $main-color;
-    
-    &:before, &:after {
-        background-color: $main-color;
-        content: "";
-        display: inline-block;
-        height: 2px;
-        position: relative;
-        vertical-align: middle;
-    }
-    &:before {
-        right: 0.5em;
-    }
-    &:after {
-        left: 0.5em;
-        margin-right: -50%;
-        width: 50%;
-    }
+.section-heading-white {
+    @include section-heading(#FFF);
 }
