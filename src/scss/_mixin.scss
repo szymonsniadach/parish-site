@@ -23,14 +23,11 @@
     &:after {
         left: 0.5em;
         margin-right: -50%;
-        width: 50%;
+        width: 100%;
     }
 }
 
 @mixin button($color-frame: $main-color, $color-text: #FFF) {
-    text-decoration: none;
     border: 2px solid $color-frame;
     color: $color-text;
-    font-size: 2.4rem;
-    padding: 10px 20px;
 }
