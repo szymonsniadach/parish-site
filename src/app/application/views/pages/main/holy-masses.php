@@ -21,7 +21,7 @@
         </div>
 
         <div class="text-center">
-            <a class="btn" href="#">Więcej informacji</a>
+            <a class="btn btn--primary" href="#">Więcej informacji</a>
         </div>
         
     </div>
