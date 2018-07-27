@@ -9,4 +9,7 @@
     &--secondary {
         @include button($main-color, #FFF);
     }
+    &--tertiary {
+        @include button($main-color, $color-dark);
+    }
 }
