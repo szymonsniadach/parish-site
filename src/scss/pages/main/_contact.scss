@@ -1,0 +1,25 @@
+.contact {
+    background: url("../img/kontakt-bg.png") no-repeat;
+    background-size: cover;
+}
+
+form {
+    input, textarea {
+        font-size: 1.6rem;
+        margin: 5px 0px;
+        padding: 7px 15px;
+        border: 1px solid #FFF;
+        border-radius: 15px;
+        color: #FFF;
+        font-family: initial;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.521);
+        }
+    }
+    input[type="text"], textarea {
+        background: $color-dark;
+    }
+    input[type="submit"] {
+        background: none;
+    }
+}
